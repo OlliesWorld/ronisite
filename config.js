@@ -1,12 +1,12 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Spectral', // <title>
+  siteTitle: 'RoniDev Site', // <title>
   manifestName: 'Spectral',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/img/website-icon.png',
+  manifestIcon: 'src/assets/img/Planet-R.png',
   pathPrefix: `/gatsby-starter-spectral/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Roni Lockwood',
   subHeading: 'FrontEnd Web Developer. Part time Open source contributor  ',
@@ -22,7 +22,13 @@ module.exports = {
       style: 'brands',
       icon: 'fa-twitter',
       name: 'Twitter',
-      url: 'https://twitter.com/blueskyroni',
+      url: 'https://twitter.com/Bluesky_Roni',
+    },
+    {
+      style: 'brands',
+      icon: 'fa-linkedin-in',
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/roni-lockwood/',
     },
     {
       style: 'solid',

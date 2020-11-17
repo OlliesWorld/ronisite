@@ -113,6 +113,7 @@ const IndexPage = () => (
           <p>
             This project of taking a design comp with the layout and create a mobile-first responsive website. This design full of unique and custom features.
           </p>
+          <button className="">GROW SPIN</button>
         </div>
       </section>
     </section>
@@ -158,7 +159,7 @@ const IndexPage = () => (
           <li className="icon fa-heart style3">
             <h3>Ollie</h3>
             <p>
-              If you know me than you know that my world pretty much revolves around Ollie. He is such a great pup and very understanding of my bad singing, messy housekeeping, schedule. All he asks is for lots of walks, social time, good food and all the belly rubs! Check out his site here:
+              If you know me than you know that my world pretty much revolves around Ollie. He is such a great pup and very understanding of my bad singing, messy housekeeping, schedule. All he asks is for lots of walks, social time, good food and all the belly rubs! Check out his site here: <br />
               <a href="olliesworld.rocks" alt="ollies world"><span role="img" aria-label="dog emoji for Ollie">🐶</span></a>
             </p>
           </li>

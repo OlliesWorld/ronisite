@@ -1,4 +1,4 @@
-# gatsby-starter-spectral
+# RoniDev Site
 
 Gatsby.js V2 starter template based on Spectral by HTML5 UP
 
@@ -40,16 +40,16 @@ Edit `config.js` to put up your details
 
 ```javascript
 module.exports = {
-  siteTitle: 'Gatsby Starter spectral', // <title>
+  siteTitle: 'RoniDev Sitev', // <title>
   ...
-  heading: 'Anubhav',
-  subHeading: 'Web Developer',
+  heading: 'Roni',
+  subHeading: 'FrontEnd Developer',
   // social
   socialLinks: [
     {
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      url: 'https://github.com/OlliesWorld',
     }
     ...
   ],

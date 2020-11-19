@@ -11,6 +11,7 @@
     "email": "roni@gmail.com"
   },
   "dependencies": {
+    "babel-plugin-remove-graphql-queries": "^2.10.0",
     "gatsby": "^2.26.1",
     "gatsby-cli": "^2.13.1",
     "gatsby-plugin-manifest": "^2.6.1",

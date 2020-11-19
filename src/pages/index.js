@@ -113,12 +113,12 @@ const IndexPage = () => (
           <p>
             This project of taking a design comp with the layout and create a mobile-first responsive website. This design full of unique and custom features.
           </p>
-          <button className="">GROW SPIN</button>
+         
         </div>
       </section>
     </section>
 
-    <section id="three" className="wrapper style1 special">
+    <section aria-label="some interesting things about me" id="three" className="wrapper style1 special">
       <div className="inner">
         <header className="major">
           <h2>What does a Developer do in real life?</h2>
@@ -156,7 +156,7 @@ const IndexPage = () => (
             <h3>Ollie</h3>
             <p>
               If you know me than you know that my world pretty much revolves around Ollie. He is such a great pup and very understanding of my bad singing, messy housekeeping, schedule. All he asks is for lots of walks, social time, good food and all the belly rubs! Check out his site here: <br />
-              <a href="olliesworld.rocks" alt="ollies world"><span role="img" aria-label="dog emoji for Ollie">🐶</span></a>
+              <a href="olliesworld.rocks" className="dogemoji" alt="ollies world"><span role="img" aria-label="dog emoji for Ollie">🐶</span></a>
             </p>
           </li>
           <li className="icon solid fa-low-vision style3">

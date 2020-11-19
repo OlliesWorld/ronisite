@@ -38,6 +38,7 @@ export default function Nav({ onMenuToggle = () => { } }) {
                 onMenuToggle();
               }}
               href="#menu"
+              aria-label="close"
             >
               {''}
             </a>

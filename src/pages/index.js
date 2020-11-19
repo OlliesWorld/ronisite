@@ -123,11 +123,7 @@ const IndexPage = () => (
         <header className="major">
           <h2>What does a Developer do in real life?</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+          Good, there's somebody I'd like you to meet. Lorraine. Yeah. George McFly? Oh, he's kinda cute and all, but, well, I think a man should be strong, so he could stand up for himself, and protect the woman he loves. Don't you? Ahh. Hey George, buddy, hey, I've been looking all over for you. You remember me, the guy who saved your life the other day.
           </p>
         </header>
         <ul className="features">

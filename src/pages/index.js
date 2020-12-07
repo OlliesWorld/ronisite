@@ -18,7 +18,7 @@ const IndexPage = () => (
         <ul className="actions special">
           <li>
             <Scroll type="id" element="one">
-              <a href="/#" className="button primary">
+              <a href="/#three" className="button primary">
                 Explore
               </a>
             </Scroll>
@@ -76,7 +76,7 @@ const IndexPage = () => (
             Landing Page
              </h2>
           <h2 className="site-tech">
-            Html5, CSS, JS
+            HTML5, CSS, JS
           </h2>
           <p>
             This project was a design file to landing page. A simple landing page for a special item or event that you would like to highlight. The button can direct them to a order form or just to a page on your site.
@@ -89,7 +89,7 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2 className="site-type">
-            New Website
+           Full 5 Page Website
              </h2>
           <h2 className="site-tech">
             GatsbyJS, Netlify & NetlifyCMS
@@ -108,7 +108,7 @@ const IndexPage = () => (
             Website from Design
              </h2>
           <h2 className="site-tech">
-            Html5 & CSS
+            HTML5 & CSS
           </h2>
           <p>
             This project of taking a design comp with the layout and create a mobile-first responsive website. This design full of unique and custom features.
@@ -123,7 +123,8 @@ const IndexPage = () => (
         <header className="major">
           <h2>What does a Developer do in real life?</h2>
           <p>
-          Good, there's somebody I'd like you to meet. Lorraine. Yeah. George McFly? Oh, he's kinda cute and all, but, well, I think a man should be strong, so he could stand up for himself, and protect the woman he loves. Don't you? Ahh. Hey George, buddy, hey, I've been looking all over for you. You remember me, the guy who saved your life the other day.
+          A developer is a problem solver in real life. They must not give up until the answer is found and the problem is fixed! Sometimes that means just a work around for temporary relief. The goal is to find or develop a complete fix. 
+          This what I love about being a developer. Think about the problem all the time and coming up with a way into an outside the box solution. Give me a Saturday afternoon, an intersting problem, and a local craft sour beer and I will gladly go down the google search rabbit hole! 
           </p>
         </header>
         <ul className="features">

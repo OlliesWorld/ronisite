@@ -686,7 +686,7 @@ input[type='radio'] {
 
   &:before {
     line-height: inherit;
-    background: #31273e;
+    background: _palette(fg-light);
     padding: 0.5rem;
   }
 
@@ -707,7 +707,7 @@ input[type='radio'] {
     border-radius: 3px;
     border: solid 2px _palette(border);
     display: inline-block;
-    font-size: 1.35em;
+    font-size: 1.85em;
     height: calc(3em + 2px);
     line-height: 3em;
     text-align: center;
@@ -725,15 +725,15 @@ input[type='radio'] {
   }
 
   &.style1 {
-    color: _palette(accent5, bg);
+    color: _palette(accent2, bg);
   }
 
   &.style2 {
-    color: _palette(accent3, bg);
+    color: _palette(accent2, bg);
   }
 
   &.style3 {
-    color: _palette(accent5, bg);
+    color: _palette(accent2, bg);
   }
 }
 
@@ -1089,7 +1089,7 @@ button,
   &.primary {
     background-color: _palette(accent6, bg);
     box-shadow: none !important;
-    color: _palette(accent5, fg-bold) !important;
+    color: _palette(accent2, fg-bold) !important;
 
     &:hover {
       background-color: lighten(_palette(accent6, bg), 5) !important;
@@ -1142,7 +1142,7 @@ button,
       display: block;
       color: _palette(accent2, bg);
       position: absolute;
-      left: 1.75em;
+      left: 1.25em;
       top: 2.75em;
       font-size: 1.5em;
       
@@ -1307,11 +1307,13 @@ button,
       h4,
       h5,
       h6 {
-        border-color: _palette($p, border);
+        border-color:_palette(accent5, bg);
       }
 
       p {
+        font-family: _family;
         color: _palette($p, fg);
+        font-size: 1.5rem;
       }
     }
   }
@@ -1383,7 +1385,7 @@ button,
 
   .icon {
     &.major {
-      border-color: _palette($p, border);
+      border-color: _palette(accent5, bg);
     }
   }
 
@@ -1537,8 +1539,8 @@ button,
   @include vendor('transform', 'translateX(20em)');
   @include vendor('transition', 'transform #{_duration(menu)} ease');
   -webkit-overflow-scrolling: touch;
-  background: _palette(accent1, bg);
-  color: _palette(accent1, fg-bold);
+  background: _palette(accent6, bg);
+  color: _palette(accent5, bg);
   height: 100%;
   max-width: 80%;
   overflow-y: auto;
@@ -1554,7 +1556,7 @@ button,
     padding: 0;
 
     > li {
-      border-top: solid 1px _palette(accent1, border);
+      border-top: solid 1px _palette(accent3, bg);
       margin: 0.5em 0 0 0;
       padding: 0.5em 0 0 0;
 
@@ -1568,7 +1570,7 @@ button,
         border: 0;
         color: inherit;
         display: block;
-        font-size: 0.8em;
+        font-size: 1em;
         letter-spacing: _size(letter-spacing-alt);
         outline: 0;
         text-decoration: none;
@@ -1751,7 +1753,7 @@ button,
     &:after {
       @include vendor('transition', 'width 0.85s ease');
       @include vendor('transition-delay', '0.25s');
-      background: _palette(fg-bold);
+      background: _palette(accent3, bg);
       content: '';
       display: block;
       height: 2px;
@@ -1788,7 +1790,7 @@ button,
     @include vendor('transform', 'translateY(0)');
     border: none;
     bottom: 0;
-    color: inherit;
+    color: _palette(accent5, bg);
     font-size: 0.8em;
     height: 8.5em;
     left: 50%;
@@ -2000,7 +2002,7 @@ body.is-mobile {
     font-size: 1.25em;
 
     a {
-      color: _palette(fg-light);
+      color: _palette(accent6, bg);
 
       &:hover {
         color: _palette(fg);
@@ -2111,9 +2113,13 @@ body.is-mobile {
   width: 70%;
 }
 .site-tech {
-  text-decoration: overline #521737;
+  background: _palette(accent6, bg);
   text-transform: capitalize;
   font-weight: 400;
+ 
+  padding: 3px;
+  text-align: center;
+  width: 50%;
 }
 .Form {
   border: 2px solid _var(accent1);
@@ -2125,56 +2131,3 @@ body.is-mobile {
 //   background:  #0081a7;
 //   translate: ;
 // }
-.Button {
-  font-size: 2em;
-  background: #3498db;
-  color: #fff;
-  border: 0.25rem solid #3498db;
-  padding: 0.85em 0.75em;
-  margin: 1rem;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-}
-.Button:hover {
-  color: #3498db;
-}
-.Button::after {
-  content: "";
-  background: #ecf0f1;
-  position: absolute;
-  z-index: -1;
-  padding: 0.85em 0.75em;
-  display: block;
-}
-.Button[class^="grow"]::after {
-  transition: all 0.3s ease;
-}
-button[class^="grow"]:hover::after {
-  transition: all 0.3s ease-out;
-}
-.grow_box::after {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transform: scale(0, 0);
-}
-.grow_box:hover::after {
-  transform: scale(1, 1);
-}
-
-.grow_spin::after {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transform: scale(0, 0) rotate(-180deg);
-}
-.grow_spin:hover::after {
-  transform: scale(1, 1) rotate(0deg);
-}
-.dogemoji agit :window-inactive{
-  width: 350px;
-  height: 300px;
-}

@@ -9,7 +9,7 @@ module.exports = {
   manifestIcon: 'src/assets/img/Planet-R.png',
   pathPrefix: `/gatsby-starter-spectral/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Roni Lockwood',
-  subHeading: 'FrontEnd Web Developer. Part time movie watcher  ',
+  subHeading: 'FrontEnd Web Developer. Part time movie watcher',
   // social
   socialLinks: [
     {
@@ -34,7 +34,7 @@ module.exports = {
       style: 'solid',
       icon: 'fa-envelope',
       name: 'Email',
-      url: 'mailto:test@example.com',
+      url: 'mailto:rtlockwoodwork@gmail.com',
     },
   ],
 };

@@ -18,7 +18,7 @@ export default function Footer() {
       <ul className="copyright">
         <li>&copy; Roni Lockwood</li>
         <li>
-          <a href="olliesworld.rocks" target="blank">Ollies World</a>
+          <a href="https://olliesworld.rocks/" target="blank">Ollies World</a>
         </li>
       </ul>
     </footer>

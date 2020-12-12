@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: 'RoniDev Site', // <title>
-  manifestName: 'Spectral',
-  manifestShortName: 'Landing', // max 12 characters
+  manifestName: 'RoniDev Site',
+  manifestShortName: 'RoniDev Site', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',

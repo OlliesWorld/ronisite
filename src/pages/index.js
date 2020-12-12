@@ -7,6 +7,13 @@ import Scroll from '../components/Scroll';
 import single from '../assets/images/single-price.jpg';
 import taft from '../assets/images/tafthill.png';
 import unplugged from '../assets/images/unplugged1.jpg';
+import Ollie from '../assets/images/ollie_toon.png';
+import Html from '../assets/images/html.png';
+import Css from '../assets/images/css.png';
+import Javascript from '../assets/images/javascript.png'
+import ReactI from '../assets/images/react.svg'
+import Gatsby from '../assets/images/Gatsby_Monogram.png'
+import Github from '../assets/images/Octocat.png'
 import config from '../../config';
 
 const IndexPage = () => (
@@ -46,23 +53,41 @@ const IndexPage = () => (
             With my attention to detail and stubborness to find a solution makes me a great developer.
           </p>
         </header>
-        {/* <ul className="icons major">
+        <ul className="icons major">
           <li>
-            <span className="icon fa-eye major style1">
-              <span className="label">I do</span>
+            <span className="icon major">
+              <img src={Html} alt="HTML Icon" className="IconL"/>
+        
             </span>
           </li>
           <li>
-            <span className="icon fa-heart major style2">
-              <span className="label">Heart </span>
+            <span className="icon major">
+            <img src={Css} alt="Css Icon" className="IconL"/>
+             
             </span>
           </li>
           <li>
-            <span className="icon solid fa-code major style3">
-              <span className="label">Code</span>
+            <span className="icon major">
+            <img src={Javascript} alt="JavaScript Icon" className="IconL"/>
             </span>
           </li>
-        </ul> */}
+          
+          <li>
+            <span className="icon major">
+            <img src={ReactI} alt="React Icon" className="IconL"/>
+            </span>
+          </li>
+          <li>
+            <span className="icon major">
+            <img src={Github} alt="GitHub Icon" className="IconL"/>
+            </span>
+          </li>
+          <li>
+            <span className="icon major">
+            <img src={Gatsby} alt="GatsbyJS Icon" className="IconL"/>
+            </span>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -128,7 +153,7 @@ const IndexPage = () => (
           </p>
         </header>
         <ul className="features">
-          <li className="icon solid fa-globe-americas  style3">
+          <li className="icon solid fa-globe-americas  style2">
             <h3>Connection</h3>
             <p>
               One of the main tools for connecting me, my work and customers is Git. Git is a free, open source version control system. This system makes the world of websites a lot easier to deploy with multiple options like Netlify.
@@ -157,7 +182,7 @@ const IndexPage = () => (
             <h3>Ollie</h3>
             <p>
               If you know me than you know that my world pretty much revolves around Ollie. He is such a great pup and very understanding of my bad singing, messy housekeeping, schedule. All he asks is for lots of walks, social time, good food and all the belly rubs! Check out his site here: <br />
-              <a href="olliesworld.rocks" className="dogemoji" alt="ollies world"><span role="img" aria-label="dog emoji for Ollie">🐶</span></a>
+              <a href="https://olliesworld.rocks/"  alt="ollies world"><img src={Ollie} className="dogemoji" alt="Ollie in toon form" /></a>
             </p>
           </li>
           <li className="icon solid fa-low-vision style3">

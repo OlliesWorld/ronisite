@@ -6,25 +6,25 @@ import Form from '../assets/images/active-states.jpg';
 import OllieSite from '../assets/images/olliesworld-site.png';
 import Portfolio from '../assets/images/portfolio-site.png';
 
-const boxes =document.querySelectorAll('.example')
+// const boxes =document.querySelectorAll('.example')
 
-window.addEventListener('scroll', checkBoxes)
+// window.addEventListener('scroll', checkBoxes)
 
-checkBoxes()
+// checkBoxes()
 
-function checkBoxes() {
-    const triggerBottom = window.innerHeight / 5 * 4
+// function checkBoxes() {
+//     const triggerBottom = window.innerHeight / 5 * 4
 
-    boxes.forEach(box => {
-        const boxTop = box.getBoundingClientRect().top
+//     boxes.forEach(box => {
+//         const boxTop = box.getBoundingClientRect().top
 
-        if(boxTop < triggerBottom){
-            box.classList.add('show')
-        } else {
-            box.classList.remove('show')
-        }
-    })
-}
+//         if(boxTop < triggerBottom){
+//             box.classList.add('show')
+//         } else {
+//             box.classList.remove('show')
+//         }
+//     })
+// }
 const ProjectPage = () => (
 
       <>

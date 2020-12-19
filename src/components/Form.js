@@ -48,7 +48,7 @@ const NameForm = (props) => {
             action="/"
             onSubmit={handleSubmit}
         >
-            <label htmlFor="nameInput" className="Form--Title">Send a Message</label>
+            <label htmlFor="nameInput" className="Form--Title">Send Me a Message!</label>
             <label className='Form--Label'>
                 <input
                     className='Form--Input'
@@ -82,9 +82,9 @@ const NameForm = (props) => {
             {/* {!!subject && <input type='hidden' name='subject' value={subject} />} */}
             <input type='hidden' name='form-name' value={name} />
             <input
-                className='Button Form--SubmitButton'
+                className='Form--SubmitButton'
                 type='submit'
-                value='Contact'
+                value='Send'
             />
         </form>
     );

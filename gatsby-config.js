@@ -4,7 +4,8 @@ module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
     title: config.siteTitle,
-    manifestIcon: 'src/assets/img/Planet-R-W.png',
+    // manifestIcon: 'src/assets/img/Planet-R-W.png',
+    icon: 'src/assets/img/Planet-R-W.png',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

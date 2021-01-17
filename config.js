@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: 'Ronis Creative' , // <title>
-  manifestName: 'Ronis Creative' ,
-  manifestShortName: 'Ronis Creative' , // max 12 characters
+  manifestName: 'Dev<Roni>{Creative}' ,
+  manifestShortName: 'Dev<Roni>{Creative}' , // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
@@ -10,7 +10,7 @@ module.exports = {
   con: 'src/assets/img/Planet-R.png',
   pathPrefix: `/gatsby-starter-spectral/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Roni Lockwood',
-  subHeading: 'FrontEnd Web Developer. Part time movie watcher',
+  subHeading: 'FrontEnd Web Developer. Part time food truck stalker',
   // social
   socialLinks: [
     {

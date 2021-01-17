@@ -23,16 +23,13 @@ import React from 'react';
             
         <div className="btn">
             <a href="https://olliesworld.rocks/games/snake/index.html" target="blank"><h3>Snake Game</h3></a>
-            </div>
-            <div className="btn">
-        
+        </div>
+        <div className="btn">
             <a href="https://goofy-villani-10eb4f.netlify.app/" target="blank"><h3>Rock, Paper, Scissors</h3></a>
-            </div>
-            <div className="btn">
-    
-             
+        </div>
+        <div className="btn">
                 <a href="https://olliesworld.rocks/games/magic/index.html" target="blank"><h3>Magic 8 Ball</h3></a>
-               </div>
+        </div>
             
       </div>
       </section>

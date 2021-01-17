@@ -20,6 +20,9 @@ import Jane from '../assets/images/jane.png';
     return(
       
       <section className="wrapper style5">
+     
+        <h2 className="align-center style8">Portfolio of Projects</h2>
+       
       
         <div className="inner">
           
@@ -74,7 +77,7 @@ import Jane from '../assets/images/jane.png';
             <p><span className="image left">
               <a href="https://olliesworld.rocks/" target="blank"><img src={OllieSite} alt="" /></a>
               </span>This is my expierment site where I started my journey and keep adding and trying new things. Along with ALL the photos of the most adorable dog, Ollie. It was my first portfolio site and will continue to evolve with my skills and knowledge.</p>
-            <h5>This site is where I expierment with what I learned and talk about my favorite Guy!</h5>
+            <h5>This site is where I expierment with what I've learned and talk about my favorite Guy!</h5>
           </Fade>
           
 				</div>

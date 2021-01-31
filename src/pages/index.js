@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-import Project from '../components/Project'
+import {Animated} from "react-animated-css";
 import Scroll from '../components/Scroll';
 
 // import single from '../assets/images/single-price.jpg';
@@ -55,37 +55,47 @@ const IndexPage = () => (
         </header>
         <ul className="icons major">
           <li>
+          <Animated animationIn="jello" animationOut="jello" animationInDuration={1800} animationOutDuration={1800} isVisible={true}>
             <span className="icon major">
               <img src={Html} alt="HTML Icon" className="IconL"/>
         
             </span>
+            </Animated>
           </li>
           <li>
+          <Animated animationIn="jello" animationOut="jello" animationInDuration={1800} animationOutDuration={1800} isVisible={true}>
             <span className="icon major">
             <img src={Css} alt="Css Icon" className="IconL"/>
              
             </span>
+            </Animated>
           </li>
           <li>
+          <Animated animationIn="jello" animationOut="jello" animationInDuration={1800} animationOutDuration={1800} isVisible={true}>
             <span className="icon major">
             <img src={Javascript} alt="JavaScript Icon" className="IconL"/>
             </span>
+            </Animated>
           </li>
           
           <li>
             <span className="icon major">
             <img src={ReactI} alt="React Icon" className="IconL "/>
             </span>
+            
           </li>
          
           <li>
             <span className="icon major">
             <img src={Gatsby} alt="GatsbyJS Icon" className="IconL"/>
             </span>
+            
           </li>
           <li>
-            <span className="icon major">
+          <span className="icon major">
+      
             <img src={Github} alt="GitHub Icon" className="IconL "/>
+            
             </span>
           </li>
         </ul>
@@ -93,9 +103,9 @@ const IndexPage = () => (
     </section>
     
     
-<div>
+{/* <div>
   <Project />
-</div>
+</div> */}
     {/* <section id="two" className="wrapper alt style2">
       <section className="spotlight">
         <div className="image">
@@ -148,7 +158,7 @@ const IndexPage = () => (
       </section>
     </section> */}
 
-    {/* <section aria-label="some interesting things about me" id="three" className="wrapper style1 special">
+    <section aria-label="some interesting things about me" id="three" className="wrapper style1 special">
       <div className="inner">
         <header className="major">
           <h2>What does a Developer do in real life?</h2>
@@ -198,7 +208,7 @@ const IndexPage = () => (
           </li>
         </ul>
       </div>
-    </section> */}
+    </section>
 
     <section id="cta" className="wrapper style4">
       <div className="inner">

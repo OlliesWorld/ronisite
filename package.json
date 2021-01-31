@@ -13,7 +13,7 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "babel-plugin-remove-graphql-queries": "^2.13.0",
-    "gatsby": "^2.29.1",
+    "gatsby": "^2.31.1",
     "gatsby-cli": "^2.16.1",
     "gatsby-plugin-react-helmet": "^3.7.0",
     "gatsby-plugin-sass": "^2.8.0",

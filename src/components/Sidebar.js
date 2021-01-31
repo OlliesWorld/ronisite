@@ -6,7 +6,7 @@ export default function SideBar({ fullMenu }) {
   return (
     <header id="header" className={`${fullMenu ? '' : 'alt'}`}>
       <h1>
-        <Link to="/">RoniDev Site</Link>
+        <Link to="/">Roni's Site</Link>
       </h1>
       <div className={`${headerOpen ? 'is-menu-visible' : ' '}`}>
         <Nav onMenuToggle={() => toggleHeader(!headerOpen)} />

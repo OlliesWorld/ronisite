@@ -4,9 +4,6 @@ import Layout from '../components/Layout';
 import {Animated} from "react-animated-css";
 import Scroll from '../components/Scroll';
 
-// import single from '../assets/images/single-price.jpg';
-// import taft from '../assets/images/tafthill.png';
-// import unplugged from '../assets/images/unplugged1.jpg';
 import Ollie from '../assets/images/ollie_toon.png';
 import Html from '../assets/images/html.png';
 import Css from '../assets/images/css.png';
@@ -25,7 +22,7 @@ const IndexPage = () => (
         <ul className="actions special">
           <li>
             <Scroll type="id" element="one">
-              <a href="/project" className="button primary">
+              <a href="/Projects" className="button primary">
                 Explore
               </a>
             </Scroll>

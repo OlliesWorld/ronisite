@@ -25,7 +25,7 @@ const IndexPage = () => (
         <ul className="actions special">
           <li>
             <Scroll type="id" element="one">
-              <a href="/#three" className="button primary">
+              <a href="/project" className="button primary">
                 Explore
               </a>
             </Scroll>

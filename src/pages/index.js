@@ -105,22 +105,22 @@ const IndexPage = () => (
           <h2>How I define a Web Developer?</h2>
           <p>
           A developer is a digital Sherlock Holmes, finding solutions for many types problems. They must not give up until the answer is found and the problem is fixed! Sometimes that means just a work around for temporary relief. The goal is to find or develop a complete fix. 
-          This what I love about being a developer. Thinking about the problem all the time and finding a way into an outside the box solution. Give me a Saturday afternoon, an intersting problem, and a <span className="icon style2"><a href="https://drydockbrewing.com/our-beers/sour-apricot/?ao_confirm" target="blank">local craft sour beer </a></span>and I will gladly go down the google rabbit hole! 
+          This what I love about being a developer. Thinking about the problem all the time and finding a way into an outside the box solution. Give me a Saturday afternoon, an intersting problem, and a <span className="icon style9"><a href="https://beerandbrewing.com/cbb-beer-reviews/top/Sour%20Beer" target="blank">local craft sour beer </a></span>and I will gladly go down the google rabbit hole! 
           </p>
         </header>
         <ul className="features">
-          <li className="icon solid fa-globe-americas  style2">
+          {/* <li className="icon solid fa-globe-americas  style2">
             <h3>Connection</h3>
             <p>
               One of the main tools for connecting me, my work and customers is Git. Git is a free, open source version control system. This system makes the world of websites a lot easier to deploy with multiple options like Netlify.
             </p>
-          </li>
-          <li className="icon  solid fa-laptop  style2">
+          </li> */}
+          {/* <li className="icon  solid fa-laptop  style2">
             <h3>Websites</h3>
             <p>
               I want to create and maintain websites that are responsive, intuitive, and creative. Working with the latest technologies to produce sites that provide a incredible service. This is my goal for a fulfilling career.
             </p>
-          </li>
+          </li> */}
           <li className="icon solid fa-code style2">
             <h3>Code</h3>
             <p>
@@ -144,7 +144,7 @@ const IndexPage = () => (
           <li className="icon solid fa-low-vision style2">
             <h3>Accessibility</h3>
             <p>
-              Another goal is to learn how to make everything I do accessible. It is very important that everybody has the same access to whatever they may need or want. Now that technology is a part most every piece our daily lives, it should also include how I create.
+              A big goal is to learn how to make everything I do accessible. It is very important that everybody has the same access to whatever they may need or want. Now that technology is a part of most every piece our daily lives, it should how I create as well.
             </p>
           </li>
         </ul>

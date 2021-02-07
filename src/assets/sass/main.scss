@@ -746,7 +746,7 @@ input[type='radio'] {
   }
 
   &.style2 {
-    color: _palette(accent3, bg);
+    color: _palette(fg);
   }
 
   &.style3 {
@@ -757,6 +757,9 @@ input[type='radio'] {
 .style8 {
   text-decoration: underline;
   text-decoration-color: _palette(accent5, bg);
+}
+.style9 {
+  color: _palette(accent5, bg);
 }
 /* Image */
 

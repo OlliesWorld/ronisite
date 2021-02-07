@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'gatsby'
 import Layout from '../components/Layout';
 import {Animated} from "react-animated-css";
 import Scroll from '../components/Scroll';
@@ -21,11 +21,11 @@ const IndexPage = () => (
         <p>{config.subHeading}</p>
         <ul className="actions special">
           <li>
-            <Scroll type="id" element="one">
-              <a href="/Projects" className="button primary">
+            
+              <Link to="/Projects" className="button primary">
                 Explore my Projects
-              </a>
-            </Scroll>
+              </Link>
+          
           </li>
         </ul>
       </div>

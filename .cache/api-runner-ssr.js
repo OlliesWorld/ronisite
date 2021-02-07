@@ -1,6 +1,9 @@
 var plugins = [{
       plugin: require('/Users/horse/Desktop/sites/new-folio/next-portfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
+    },{
+      plugin: require('/Users/horse/Desktop/sites/new-folio/next-portfolio/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"Roni Dev","short_name":"Roni Dev","start_url":"/gatsby-starter-spectral/","background_color":"#663399","theme_color":"#663399","display":"standalone","icon":"src/assets/img/Planet-R.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"47d346ccbc5b0cb865d4e3a4a0021b72"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [

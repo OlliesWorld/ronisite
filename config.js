@@ -10,7 +10,7 @@ module.exports = {
   con: 'src/assets/img/Planet-R.png',
   pathPrefix: `/gatsby-starter-spectral/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Roni Lockwood',
-  subHeading: 'FrontEnd Web Developer by Day. Food Truck stalker by evening!',
+  subHeading: 'FrontEnd Web Developer by Day and Night!',
   // social
   socialLinks: [
     {

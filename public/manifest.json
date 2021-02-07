@@ -1,0 +1,19 @@
+{
+  "main.js": "render-page.js",
+  "main.js.map": "render-page.js.map",
+  "static/Gatsby_Monogram.png": "static/Gatsby_Monogram-05712cc0881a7e09b19bf39b77fdd28a.png",
+  "static/active-states.jpg": "static/active-states-45f502401912fb2bb1955f12b78968a7.jpg",
+  "static/banner.jpg": "static/banner-973a86b5d6d623a93e4852c12d937ba9.jpg",
+  "static/codercat.jpg": "static/codercat-be14b0c5a65c386a018ee63b81f4b620.jpg",
+  "static/greenOllie.jpeg": "static/greenOllie-2f860425cd85c419d83958ded676b742.jpeg",
+  "static/jane.png": "static/jane-9ee89e33a58347f54cfeef065d447d16.png",
+  "static/ollie_toon.png": "static/ollie_toon-006c3affecfb03cba521b19008c9a456.png",
+  "static/olliesworld-site.png": "static/olliesworld-site-7b6f60319e8997c2410292def4ee1cc3.png",
+  "static/pic01.jpg": "static/pic01-4ee3b098fd62d110863ed47d7cabaf13.jpg",
+  "static/pic02.jpg": "static/pic02-c917e815ac575fb9428a796ad2150bc9.jpg",
+  "static/pic03.jpg": "static/pic03-998b37fb4269d5bd6f6de7702d19d95c.jpg",
+  "static/pic05.jpg": "static/pic05-c7c5815f051386a49536c09d01f5f79b.jpg",
+  "static/slickspizza.png": "static/slickspizza-afc07d52489a092e1f7048eeb42046fd.png",
+  "static/tafthill.png": "static/tafthill-07a68359b7245a0e98854a1e6b56e627.png",
+  "static/unplugged1.jpg": "static/unplugged1-2c87c1af9a90c4dbe15c79dff6ed973f.jpg"
+}

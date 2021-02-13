@@ -10,10 +10,10 @@ const IndexPage = () => (
     <article id="main">
       <header>
         <h2>Projects</h2>
-        <p>Examples from my Portfolio</p>
+
       </header>
-        <Project />
-        <Games />
+      <Project />
+      <Games />
     </article>
   </Layout>
 );

@@ -1,7 +1,7 @@
 module.exports = {
-  siteTitle: "Roni's Portfolio" , // <title>
-  manifestName: 'Roni Dev' ,
-  manifestShortName: 'Roni Dev' , // max 12 characters
+  siteTitle: "Roni's Portfolio", // <title>
+  manifestName: 'Roni Dev',
+  manifestShortName: 'Roni Dev', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
@@ -9,7 +9,7 @@ module.exports = {
   manifestIcon: 'src/assets/img/Planet-R.png',
   con: 'src/assets/img/Planet-R.png',
   pathPrefix: `/gatsby-starter-spectral/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Roni Lockwood',
+  heading: "Roni's Portfolio",
   subHeading: 'FrontEnd Web Developer by Day and Night!',
   // social
   socialLinks: [

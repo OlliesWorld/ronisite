@@ -1,9 +1,7 @@
 import { navigate } from "gatsby"
 import React, { useState } from "react";
 
-// import '../assets/sass/Form.css'
 
-// This function encodes the captured form data in the format that Netlify's backend requires
 function encode(data) {
     return Object.keys(data)
         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -79,7 +77,7 @@ const NameForm = (props) => {
                 />
             </label>
             <input type='text' name='_gotcha' style={{ display: 'none' }} />
-            {/* {!!subject && <input type='hidden' name='subject' value={subject} />} */}
+
             <input type='hidden' name='form-name' value={name} />
             <input
                 className='Form--SubmitButton'

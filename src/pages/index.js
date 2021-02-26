@@ -1,17 +1,17 @@
-import React from 'react';
-import {Link} from 'gatsby'
-import Layout from '../components/Layout';
-import {Animated} from "react-animated-css";
-import Scroll from '../components/Scroll';
+import React from 'react'
+import { Link } from 'gatsby'
+import Layout from '../components/Layout'
 
-import Ollie from '../assets/images/ollie_toon.png';
-import Html from '../assets/images/html.png';
-import Css from '../assets/images/css.png';
-import Javascript from '../assets/images/javascript.png'
+import Scroll from '../components/Scroll'
+
+import Ollie from '../assets/images/ollie_toon.png'
+import Html from '../assets/images/HTML5_Badge.png'
+import Css from '../assets/images/css.png'
+import Javascript from '../assets/images/js.png'
 import ReactI from '../assets/images/react.svg'
 import Gatsby from '../assets/images/Gatsby_Monogram.png'
 import Github from '../assets/images/codercat.jpg'
-import config from '../../config';
+import config from '../../config'
 
 const IndexPage = () => (
   <Layout>
@@ -21,11 +21,11 @@ const IndexPage = () => (
         <p>{config.subHeading}</p>
         <ul className="actions special">
           <li>
-            
-              <Link to="/Projects" className="button primary">
-                Explore Projects
+
+            <Link to="/Projects" className="button primary">
+              Explore Projects
               </Link>
-          
+
           </li>
         </ul>
       </div>
@@ -38,7 +38,7 @@ const IndexPage = () => (
 
     <section id="one" className="wrapper style1 special">
       <div className="inner">
-        <header className="major">
+        <header className="major gradient">
           <h2>
             I am passionate about all things web devlopment,
             <br />
@@ -50,62 +50,62 @@ const IndexPage = () => (
             {/* With my attention to detail and stubborness to find a solution makes me a great developer. */}
           </p>
         </header>
-        <ul className="icons major">
+        <ul className="icons major style4">
           <li>
-          <Animated animationIn="jello" animationOut="jello" animationInDuration={1800} animationOutDuration={1800} isVisible={true}>
+
             <span className="icon major">
-              <img src={Html} alt="HTML Icon" className="IconL"/>
-        
+              <img src={Html} alt="HTML Icon" className="IconL" />
+
             </span>
-            </Animated>
+
           </li>
           <li>
-          <Animated animationIn="jello" animationOut="jello" animationInDuration={1800} animationOutDuration={1800} isVisible={true}>
+
             <span className="icon major">
-            <img src={Css} alt="Css Icon" className="IconL"/>
-             
+              <img src={Css} alt="CSS Icon" className="IconS" />
+
             </span>
-            </Animated>
+
           </li>
           <li>
-          <Animated animationIn="jello" animationOut="jello" animationInDuration={1800} animationOutDuration={1800} isVisible={true}>
+
             <span className="icon major">
-            <img src={Javascript} alt="JavaScript Icon" className="IconL"/>
+              <img src={Javascript} alt="JavaScript Icon" className="IconS" />
             </span>
-            </Animated>
+
           </li>
-          
+
           <li>
             <span className="icon major">
-            <img src={ReactI} alt="React Icon" className="IconL "/>
+              <img src={ReactI} alt="React Icon" className="IconL " />
             </span>
-            
+
           </li>
-         
+
           <li>
             <span className="icon major">
-            <img src={Gatsby} alt="GatsbyJS Icon" className="IconL"/>
+              <img src={Gatsby} alt="GatsbyJS Icon" className="IconL" />
             </span>
-            
+
           </li>
           <li>
-          <span className="icon major">
-      
-            <img src={Github} alt="GitHub Icon" className="IconL "/>
-            
+            <span className="icon major">
+
+              <img src={Github} alt="GitHub Icon" className="IconL " />
+
             </span>
           </li>
         </ul>
       </div>
     </section>
-    
+
     <section aria-label="some interesting things about me" id="three" className="wrapper style1 special">
       <div className="inner">
-        <header className="major">
+        <header className="major gradient2">
           <h2>How I define a Web Developer?</h2>
           <p>
-          A developer is a digital Sherlock Holmes, finding solutions for many types problems. They must not give up until the answer is found and the problem is fixed! Sometimes that means just a work around for temporary relief. The goal is to find or develop a complete fix. 
-          This what I love about being a developer. Thinking about the problem all the time and finding a way into an outside the box solution. Give me a Saturday afternoon, an intersting problem, and a <span className="icon style9"><a href="https://beerandbrewing.com/cbb-beer-reviews/top/Sour%20Beer" target="blank">local craft sour beer </a></span>and I will gladly go down the google rabbit hole! 
+            A developer is a digital Sherlock Holmes, finding solutions for many types problems. They must not give up until the answer is found and the problem is fixed! Sometimes that means just a work around for temporary relief. The goal is to find or develop a complete fix.
+          This what I love about being a developer. Thinking about the problem all the time and finding a way into an outside the box solution. Give me a Saturday afternoon, an intersting problem, and a <span className="icon style9"><a href="https://beerandbrewing.com/cbb-beer-reviews/top/Sour%20Beer" target="blank">local craft sour beer </a></span>and I will gladly go down the google rabbit hole!
           </p>
         </header>
         <ul className="features">
@@ -126,7 +126,7 @@ const IndexPage = () => (
             <p>
               My favorite obsession! I love learning how to make things look good and work together. How all these characters and letters can create an application that will be used by someone in I have never met.
             </p>
-            
+
           </li>
           <li className="icon solid fa-headphones-alt style2">
             <h3>Music</h3>
@@ -137,8 +137,8 @@ const IndexPage = () => (
           <li className="icon fa-heart style2">
             <h3>Ollie</h3>
             <p>
-              If you know me than you know that my world pretty much revolves around Ollie. He is such a great pup and very understanding of my bad singing, messy housekeeping, schedule. All he asks is for lots of walks, social time, good food and all the belly rubs! Check out his site here: <br />
-              <a href="https://olliesworld.rocks/"  alt="ollies world"><img src={Ollie} className="dogemoji" alt="Ollie in toon form" /></a>
+              If you know me than you know that my world pretty much revolves around Ollie. He is such a great pup and very understanding of my bad singing, messy housekeeping and schedule. All he asks is for lots of walks, social time, good food and all the belly rubs! Check out his site here: <br />
+              <a href="https://olliesworld.rocks/" alt="ollies world"><img src={Ollie} className="dogemoji" alt="Ollie in toon form" /></a>
             </p>
           </li>
           <li className="icon solid fa-low-vision style2">

@@ -1,5 +1,6 @@
 import { navigate } from "gatsby"
-import React, { useState } from "react";
+import React, { useState } from "react"
+
 
 
 function encode(data) {
@@ -39,14 +40,14 @@ const NameForm = (props) => {
         <form
             name="contact"
             method="post"
-            data-netlify-recaptcha="true"
+            // data-netlify-recaptcha="true"
             data-netlify="true"
-            data-netlify-honeypot="bot-field"
+            // data-netlify-honeypot="bot-field"
             className="Form"
             action="/"
             onSubmit={handleSubmit}
         >
-            <label htmlFor="nameInput" className="Form--Title">Send Me a Message!</label>
+            <label htmlFor="nameInput" className="Form--Title">Send Us a Message!</label>
             <label className='Form--Label'>
                 <input
                     className='Form--Input'

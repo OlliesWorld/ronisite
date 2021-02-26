@@ -283,7 +283,7 @@ i {
 p {
   margin: 0 0 _size(element-margin) 0;
   font-size: 1.5rem;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
 
 h1,
@@ -326,6 +326,7 @@ h3 {
 }
 
 h4 {
+  font-family: _font(family);
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -447,9 +448,6 @@ header {
     top: -0.25em;
   }
 
-  //   h2 + p {
-  //   }
-
   h3 + p {
     font-size: 1.1em;
   }
@@ -533,7 +531,6 @@ textarea {
 
   &:focus {
     box-shadow: 0 0 0 2px _palette(accent1, bg);
-    
   }
 }
 
@@ -548,7 +545,6 @@ select {
   &:focus {
     &::-ms-value {
       background-color: transparent;
-      
     }
   }
 
@@ -592,7 +588,7 @@ input[type='radio'] {
     &:before {
       background: _palette(border-bg);
       border-radius: 3px;
-      
+
       content: '';
       display: inline-block;
       font-size: 0.8em;
@@ -625,7 +621,6 @@ input[type='checkbox'] {
   & + label {
     &:before {
       border-radius: 3px;
-      
     }
   }
 }
@@ -678,7 +673,27 @@ input[type='radio'] {
     padding: 0;
   }
 }
-
+// .gradient {
+//   background: #006675; /* fallback for old browsers */
+//   background: -webkit-linear-gradient(
+//     to right,
+//     #006675,
+//     #a78a00
+//   ); /* Chrome 10-25, Safari 5.1-6 */
+//   background: linear-gradient(to right, #006675, #a78a00);
+// }
+.gradient {
+  background-color: #a78a00;
+  background-image: linear-gradient(316deg, #a78a00 74%, #006675 0%);
+}
+.gradient2 {
+  background: rgb(167, 138, 0);
+  background: linear-gradient(
+    30deg,
+    rgba(167, 138, 0, 1) 0%,
+    rgba(0, 102, 117, 1) 100%
+  );
+}
 /* Icon */
 
 .icon {
@@ -693,7 +708,7 @@ input[type='radio'] {
   &:before {
     line-height: inherit;
     background: _palette(fg-light);
-    padding: 0.5rem;
+    padding: 0.8rem;
   }
 
   &.solid {
@@ -717,11 +732,11 @@ input[type='radio'] {
     height: calc(3em + 2px);
     line-height: 3em;
     text-align: center;
-    width: calc(3em + 2px);
+    width: calc(3em + 5px);
     animation-name: spin;
     animation-duration: 12000ms;
     animation-iteration-count: infinite;
-    animation-timing-function: linear; 
+    animation-timing-function: linear;
 
     &:before {
       @include vendor('transform', 'rotate(45deg)');
@@ -735,12 +750,12 @@ input[type='radio'] {
   }
   @keyframes spin {
     from {
-        transform:rotate(0deg);
+      transform: rotate(0deg);
     }
     to {
-        transform:rotate(360deg);
+      transform: rotate(360deg);
     }
-}
+  }
   &.style1 {
     color: _palette(accent2, bg);
   }
@@ -752,7 +767,9 @@ input[type='radio'] {
   &.style3 {
     color: _palette(accent7, bg);
   }
-  
+  &.style4 {
+    background: _palette(fg);
+  }
 }
 .style8 {
   text-decoration: underline;
@@ -952,7 +969,7 @@ ul.icons {
 
   li {
     display: inline-block;
-    padding: 0 1em 0 0;
+    height: 15rem;
 
     &:last-child {
       padding-right: 0 !important;
@@ -1154,7 +1171,7 @@ button,
     position: relative;
     text-align: left;
     width: 50%;
-    font-weight: 600;
+    font-weight: 300;
 
     @for $i from 1 through _misc(max-features) {
       $j: 0.035 * $i;
@@ -1171,7 +1188,6 @@ button,
       left: 1.25em;
       top: 2.75em;
       font-size: 1.5em;
-      
     }
 
     &:nth-child(1) {
@@ -1290,9 +1306,9 @@ button,
 /* Wrapper */
 .wrapper2 {
   background-color: _palette(accent1, bg);
-  color: _palette( fg);
+  color: _palette(fg);
   margin: 1rem 0;
-;}
+}
 @mixin wrapper($p) {
   background-color: _palette($p, bg);
   color: _palette($p, fg);
@@ -1337,7 +1353,7 @@ button,
       h4,
       h5,
       h6 {
-        border-color:_palette(accent5, bg);
+        border-color: _palette(accent5, bg);
       }
 
       p {
@@ -1352,7 +1368,6 @@ button,
 
   label {
     color: _palette($p, fg-bold);
-    
   }
 
   input[type='text'],
@@ -1497,7 +1512,7 @@ button,
 }
 
 .wrapper {
-  @include padding(6em, 0);
+  @include padding(2em, 0);
 
   > .inner {
     width: 60em;
@@ -1580,6 +1595,7 @@ button,
   -webkit-overflow-scrolling: touch;
   background: _palette(accent1, bg);
   color: _palette(accent5, bg);
+  opacity: 0.9;
   height: 100%;
   max-width: 60%;
   overflow-y: auto;
@@ -1648,7 +1664,6 @@ button,
 
     &:before {
       display: block;
-      
     }
   }
 
@@ -1694,7 +1709,6 @@ button,
   }
 
   nav {
-    
     height: inherit;
     line-height: inherit;
     position: absolute;
@@ -1702,7 +1716,6 @@ button,
     top: 0;
 
     > ul {
-      
       list-style: none;
       margin: 0;
       padding: 0;
@@ -1711,7 +1724,6 @@ button,
       > li {
         display: inline-block;
         padding: 0;
-        
 
         > a {
           border: 0;
@@ -1737,7 +1749,6 @@ button,
               height: 3.75em;
               vertical-align: top;
               width: 2.5em;
-              
             }
 
             @include breakpoint('<=small') {
@@ -2156,14 +2167,16 @@ body.is-mobile {
 .IconL {
   width: 100%;
 }
-.dogemoji{ 
+.IconS {
+  width: 85%;
+}
+
+.dogemoji {
   display: block;
   margin: 0 auto;
   width: 30%;
 }
 .site-type {
- 
-
   width: 70%;
 }
 .site-tech {
@@ -2175,16 +2188,15 @@ body.is-mobile {
   width: 50%;
 }
 .Form {
-  
   margin: 50px auto;
   width: 100%;
   max-width: 360px;
   height: 55vh;
 }
 .Form--Title {
- font-size: 2rem;
- text-decoration: underline;
- text-decoration-color:  #a78a00;
+  font-size: 2rem;
+  text-decoration: underline;
+  text-decoration-color: #a78a00;
 }
 .Form--Label {
   border: 2px solid _palette(accent6, bg);
@@ -2193,7 +2205,6 @@ body.is-mobile {
 // /**Projects Page **/
 
 .image-card {
-
   width: 30%;
 }
 .container {
@@ -2204,18 +2215,17 @@ body.is-mobile {
   width: 100%;
 }
 
-
 .thanks-img {
   width: 30%;
 }
 
-.btn{
+.btn {
   background: transparent;
   color: white;
   border: 2px solid _palette(accent5, bg);
   font-size: 1rem;
   letter-spacing: 2px;
-  padding: .8rem 1rem 0;
+  padding: 0.8rem 1rem 0;
   text-transform: uppercase;
   cursor: pointer;
   display: inline-block;
@@ -2223,15 +2233,17 @@ body.is-mobile {
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, .5);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 
-
-
-.btn:hover{
+.btn:hover {
   background: _palette(accent5, bg);
   border-radius: 50% 20% / 10% 40%;
 }
 
-
-
+.form img {
+  margin: 4rem 0 0 4rem;
+  border-radius: 5px;
+  float: left;
+  width: 25%;
+}

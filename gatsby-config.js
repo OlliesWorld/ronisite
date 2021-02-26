@@ -1,4 +1,7 @@
-const config = require('./config');
+let env = process.env.NODE_ENV || 'development'
+require('dotenv').config({ path: `./.env.${env}` })
+
+const config = require('./config')
 
 module.exports = {
   pathPrefix: config.pathPrefix,
@@ -12,7 +15,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: config.manifestName,
+        name: config.manifestxsName,
         short_name: config.manifestShortName,
         start_url: config.pathPrefix || config.manifestStartUrl,
         background_color: config.manifestBackgroundColor,
@@ -34,5 +37,7 @@ module.exports = {
         generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
       },
     },
+
+
   ],
 };

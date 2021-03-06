@@ -1,15 +1,15 @@
 import React from 'react';
 
 
-import "animate.css/animate.min.css";
-import Fade from 'react-reveal/Fade';
+import "animate.css/animate.min.css"
+import Fade from 'react-reveal/Fade'
 
-import Taft from '../assets/images/tafthill.png';
-import Unplug from '../assets/images/unplugged1.jpg';
-import Slicks from '../assets/images/slickspizza.png';
-import Form from '../assets/images/active-states.jpg';
-import OllieSite from '../assets/images/olliesworld-site.png';
-import Place from '../assets/images/placeholder.png';
+import Taft from '../assets/images/tafthill.png'
+import Unplug from '../assets/images/unplugged1.jpg'
+import Slicks from '../assets/images/slickspizza.png'
+import Form from '../assets/images/active-states.jpg'
+import OllieSite from '../assets/images/olliesworld-site.png'
+import Place from '../assets/images/placeholder.png'
 
 
 
@@ -76,7 +76,7 @@ class ProjectPage extends React.Component {
             <h4>First Site</h4>
             <p><span className="image left">
               <a href="https://olliesworld.rocks/" target="blank"><img src={OllieSite} alt="My first portfolio site" /></a>
-            </span>This is my first & expierment site where I started my journey. I plan on adding and trying new things. The original goal was a blog, so maybe I will get that deployed next. Along with ALL the most up to date photos of the most adorable dog, Ollie. Currently it is a basic HTML and CSS site, but I will be changing that to a framework. Most likely React as I seem to understand it and want to sharpen my skillset.</p>
+            </span>This is my first where I started my journey. The original goal was a blog, so maybe I will get that deployed next. Currently it is a basic HTML and CSS site, but I will be updating to a framework, I really like working with React and want to sharpen my skillset.</p>
             <h5>First portfolio site and will continue to evolve with my skills and knowledge.</h5>
           </Fade>
 

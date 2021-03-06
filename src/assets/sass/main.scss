@@ -683,8 +683,8 @@ input[type='radio'] {
 //   background: linear-gradient(to right, #006675, #a78a00);
 // }
 .gradient {
-  background-color: #a78a00;
-  background-image: linear-gradient(316deg, #a78a00 74%, #006675 0%);
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.075);
 }
 .gradient2 {
   background: rgb(167, 138, 0);
@@ -837,7 +837,7 @@ ol {
 
 ul {
   list-style: disc;
-  margin: 0 0 _size(element-margin) 0;
+  margin: 2rem 0 0 0;
   padding-left: 1em;
 
   li {
@@ -969,7 +969,7 @@ ul.icons {
 
   li {
     display: inline-block;
-    height: 15rem;
+    height: 5rem;
 
     &:last-child {
       padding-right: 0 !important;
@@ -977,7 +977,7 @@ ul.icons {
   }
 
   &.major {
-    padding: 1em 0;
+    padding: 4em 0;
 
     li {
       padding-right: 3.5em;
@@ -1164,6 +1164,8 @@ button,
   list-style: none;
   padding: 0;
   width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.075);
 
   li {
     @include padding(4em, 4em, (0, 0, 0, 2em));
@@ -2050,7 +2052,7 @@ body.is-mobile {
 /* Footer */
 
 #footer {
-  @include padding(6em, 0);
+  @include padding(3em, 0);
   background-color: darken(_palette(bg), 8);
   text-align: center;
 

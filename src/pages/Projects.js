@@ -1,12 +1,13 @@
-import React from 'react';
+import React from 'react'
 
+import Layout from '../components/Layout'
+import Project from '../components/Project'
+import Games from '../components/Games'
 
-import Layout from '../components/Layout';
-import Project from '../components/Project';
-import Games from '../components/Games';
 
 const IndexPage = () => (
-  <Layout fullMenu>
+
+  < Layout fullMenu>
     <article id="main">
       <header>
         <h2>Projects</h2>
@@ -14,8 +15,9 @@ const IndexPage = () => (
       </header>
       <Project />
       <Games />
-    </article>
-  </Layout>
-);
 
-export default IndexPage;
+    </article>
+  </  Layout >
+)
+
+export default IndexPage

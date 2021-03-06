@@ -1,7 +1,7 @@
-import React from 'react';
-import "animate.css/animate.min.css";
-// import Fade from 'react-reveal/Fade';
-// import {Animated} from "react-animated-css";
+import React from 'react'
+import "animate.css/animate.min.css"
+// import Fade from 'react-reveal/Fade'
+// import {Animated} from "react-animated-css"
 
 function GamePage() {
 
@@ -39,7 +39,7 @@ function GamePage() {
           <a href="https://goofy-villani-10eb4f.netlify.app/" target="blank"><h3>Rock, Paper, Scissors</h3></a>
 
         </div>
-        <div className="button default">
+        <div className="btn">
 
           <a href="https://olliesworld.rocks/games/magic/index.html" target="blank"><h3>Magic 8 Ball</h3></a>
 
@@ -49,5 +49,5 @@ function GamePage() {
     </section>
 
   )
-};
-export default GamePage;
+}
+export default GamePage

@@ -5,7 +5,7 @@ import Project from '../components/Project'
 import Games from '../components/Games'
 
 
-const IndexPage = () => (
+const ProjectsPage = () => (
 
   < Layout fullMenu>
     <article id="main">
@@ -20,4 +20,4 @@ const IndexPage = () => (
   </  Layout >
 )
 
-export default IndexPage
+export default ProjectsPage

@@ -9,7 +9,7 @@ import Unplug from '../assets/images/unplugged1.jpg'
 import Slicks from '../assets/images/slickspizza.png'
 import Form from '../assets/images/active-states.jpg'
 import OllieSite from '../assets/images/olliesworld-site.png'
-import Place from '../assets/images/placeholder.png'
+import Return from '../assets/images/returnship-shot.png'
 
 
 
@@ -20,10 +20,18 @@ class ProjectPage extends React.Component {
     return (
       <section className="wrapper style5">
         <div className="inner">
+          <Fade left >
+            <h4 className="style8">Women Who Code Returnship</h4>
+            <p><span className="image left">
+              <a href="https://career-returnship.netlify.app/" alt="Screen Shot of Returnship Website" target="blank"> <img src={Return} alt="Placeholder for a project in progress" /></a>
+            </span> This site was built for the Women Who Code Returnship Program. I worked with a team using a Figma design file to create this website. It was my first experience working with a team and really understanding how to use GitHub. I learned about Styled Components and how to hook up a CMS. This project was a great way to push my journey as a developer forward.</p>
+            <h4>~ GatsbyJS and NetlifyCMS site ~</h4>
+          </Fade>
+          <hr />
           <Fade right >
             <h4 className="style8">Taft Hill Acres</h4>
             <p><span className="image right">
-              <a href="https://www.tafthillacres.com/" alt="Website" target="blank"><img src={Taft} alt="" /></a>
+              <a href="https://www.tafthillacres.com/" target="blank"><img src={Taft} alt="Screen shot of Freelance Website" /></a>
             </span>This 6 page site is a complete redesign for the client. There are 2 image sliders, and a grid gallery with over 50 images. One slider includes customer testimonials along with images. A dark theme which we balanced with warm lighter color text boxes. I was able to take the Farm's logo and recreate it into a image file that will be useable in other situations. The contact form emails responses directly to client. The site is built on GatsbyJS Framework for reliability, speed and security. With Lighthouse scores of 99 to 100.</p>
             <h4 >~ GatsbyJS site full of images, a Contact Form and custom color theme ~</h4>
           </Fade>
@@ -56,14 +64,7 @@ class ProjectPage extends React.Component {
             <h4>~ Sign up form that is easily customized to your brand and implemented ~</h4>
           </Fade>
           <hr />
-          <Fade right >
-            <h4 className="style8">WWC Returnship</h4>
-            <p><span className="image right">
-              <img src={Place} alt="Placeholder for a project in progress" />
-            </span> This site was built for the Women Who Code Returnship Program. I worked with a team of developers to create this website. It was my first experience working with a team and really understanding how to use GitHub. I learned about Styled Components and how to hook up a CMS. This project was a great way to push my journey as a developer forward. Once it is complete I will be sharing the link and Screenshot.</p>
-            <h4>~ GatsbyJS and NetlifyCMS site ~</h4>
-          </Fade>
-          <hr />
+
           <Fade left>
             <h4 className="style8">First Site</h4>
             <p><span className="image left">

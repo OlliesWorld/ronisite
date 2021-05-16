@@ -4,6 +4,7 @@ const preferDefault = m => (m && m.default) || m
 
 
 exports.components = {
+  "component---cache-dev-404-page-js": preferDefault(require("/Users/horse/Desktop/sites/new-folio/next-portfolio/.cache/dev-404-page.js")),
   "component---src-pages-404-js": preferDefault(require("/Users/horse/Desktop/sites/new-folio/next-portfolio/src/pages/404.js")),
   "component---src-pages-about-js": preferDefault(require("/Users/horse/Desktop/sites/new-folio/next-portfolio/src/pages/About.js")),
   "component---src-pages-contact-js": preferDefault(require("/Users/horse/Desktop/sites/new-folio/next-portfolio/src/pages/Contact.js")),

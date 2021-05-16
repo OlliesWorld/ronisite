@@ -40,9 +40,9 @@ const NameForm = (props) => {
         <form
             name="contact"
             method="post"
-            // data-netlify-recaptcha="true"
+            data-netlify-recaptcha="true"
             data-netlify="true"
-            // data-netlify-honeypot="bot-field"
+            data-netlify-honeypot="bot-field"
             className="Form"
             action="/"
             onSubmit={handleSubmit}

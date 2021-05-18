@@ -111,7 +111,6 @@ const { hot } = __webpack_require__(/*! react-hot-loader/root */ "./node_modules
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": hot(preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js"))),
-  "component---src-pages-contact-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/Contact.js */ "./src/pages/Contact.js"))),
   "component---src-pages-index-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js")))
   }
 
@@ -30522,17 +30521,6 @@ function fallbackHot() {
 
 /***/ }),
 
-/***/ "./node_modules/react-ssg-netlify-forms/build/index.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/react-ssg-netlify-forms/build/index.js ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports=function(e){var t={};function r(n){if(t[n])return t[n].exports;var o=t[n]={i:n,l:!1,exports:{}};return e[n].call(o.exports,o,o.exports,r),o.l=!0,o.exports}return r.m=e,r.c=t,r.d=function(e,t,n){r.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:n})},r.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},r.t=function(e,t){if(1&t&&(e=r(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var n=Object.create(null);if(r.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)r.d(n,o,function(t){return e[t]}.bind(null,o));return n},r.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return r.d(t,"a",t),t},r.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},r.p="",r(r.s=1)}([function(e,t){e.exports=__webpack_require__(/*! react */ "react")},function(e,t,r){"use strict";r.r(t);var n=r(0),o=r.n(n);t.default=({formName:e,preSubmit:t,postSubmit:r,formValues:a,children:i})=>{const[u,l]=Object(n.useState)(!0);Object(n.useEffect)(()=>{l(!1)},[]);const c=e=>encodeURIComponent(e).replace(/%20/g,"+"),f=async n=>{if(n.preventDefault(),t&&await t()||!t){if(!await(async()=>{return await fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:(t={...a,"form-name":e,infoo:p},Object.entries(t).map(e=>c(e[0])+"="+c(e[1])).join("&"))});var t})())throw new Error("Error submitting to Netlify");r&&r()}else console.log("preSubmit false")},[p,s]=Object(n.useState)("");return u?o.a.createElement("form",{name:e,onSubmit:f,"data-netlify":"true","netlify-honeypot":"infoo"},i):o.a.createElement("form",{onSubmit:f},i,o.a.createElement("p",{style:{opacity:"0",position:"absolute",top:"0",left:"0"}},o.a.createElement("input",{style:{width:"0",height:"0",zIndex:"-1"},name:"description","aria-label":"description",value:p,onChange:e=>s(e.target.value)})))}}]);
-
-/***/ }),
-
 /***/ "./node_modules/scheduler/cjs/scheduler-tracing.development.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/scheduler/cjs/scheduler-tracing.development.js ***!
@@ -32364,17 +32352,6 @@ module.exports = __webpack_require__.p + "static/ollie_toon-006c3affecfb03cba521
 
 /***/ }),
 
-/***/ "./src/assets/images/olliesnow.png":
-/*!*****************************************!*\
-  !*** ./src/assets/images/olliesnow.png ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/olliesnow-f4d2788f16be2738ad2d98011bf983d9.png";
-
-/***/ }),
-
 /***/ "./src/assets/images/react.svg":
 /*!*************************************!*\
   !*** ./src/assets/images/react.svg ***!
@@ -32437,92 +32414,6 @@ function Footer() {
     target: "blank"
   }, "Ollies World"))));
 }
-
-/***/ }),
-
-/***/ "./src/components/Form.js":
-/*!********************************!*\
-  !*** ./src/components/Form.js ***!
-  \********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var react_ssg_netlify_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-ssg-netlify-forms */ "./node_modules/react-ssg-netlify-forms/build/index.js");
-/* harmony import */ var react_ssg_netlify_forms__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_ssg_netlify_forms__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-
-const ContactForm = () => {
-  // Post-Submit Navigate
-  const postSubmit = () => {
-    Object(gatsby__WEBPACK_IMPORTED_MODULE_1__["navigate"])('/thanks');
-  }; // Simple controlled form setup (Control your own state)
-
-
-  const handleChange = e => setFormValues({ ...formValues,
-    [e.target.name]: e.target.value
-  });
-
-  const {
-    0: formValues,
-    1: setFormValues
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
-    name: '',
-    email: '',
-    message: ''
-  });
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_ssg_netlify_forms__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    className: "Form",
-    formName: "contact",
-    formValues: formValues,
-    postSubmit: postSubmit
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    htmlFor: "nameInput",
-    className: "Form--Title"
-  }, "Send us a Message"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "Form--Label"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    placeholder: "Name",
-    className: "Form--Input",
-    type: "text",
-    name: "name",
-    value: formValues.name,
-    onChange: handleChange,
-    required: true
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "Form--Label"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "Form--Input",
-    type: "email",
-    placeholder: "Email",
-    name: "email",
-    value: formValues.email,
-    onChange: handleChange,
-    required: true
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "Form--Label"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
-    className: "Form--Input Form--Textarea",
-    placeholder: "Message",
-    name: "message",
-    rows: "8",
-    value: formValues.message,
-    onChange: handleChange,
-    required: true
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "Button Form--SubmitButton",
-    type: "submit",
-    value: "Contact"
-  }, "Send")));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (ContactForm);
 
 /***/ }),
 
@@ -32835,42 +32726,6 @@ const IndexPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Not Found"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Not a Valid URL"))));
 
 /* harmony default export */ __webpack_exports__["default"] = (IndexPage);
-
-/***/ }),
-
-/***/ "./src/pages/Contact.js":
-/*!******************************!*\
-  !*** ./src/pages/Contact.js ***!
-  \******************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Form */ "./src/components/Form.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Footer */ "./src/components/Footer.js");
-/* harmony import */ var _components_Sidebar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Sidebar */ "./src/components/Sidebar.js");
-/* harmony import */ var _assets_images_olliesnow_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/images/olliesnow.png */ "./src/assets/images/olliesnow.png");
-/* harmony import */ var _assets_images_olliesnow_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_images_olliesnow_png__WEBPACK_IMPORTED_MODULE_4__);
-
-
-
-
-
-
-const ContactPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-  id: "one",
-  className: "wrapper style1 "
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Sidebar__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-  className: "form_style"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-  src: _assets_images_olliesnow_png__WEBPACK_IMPORTED_MODULE_4___default.a,
-  alt: "Ollie and I in the snow"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Form__WEBPACK_IMPORTED_MODULE_1__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null));
-
-/* harmony default export */ __webpack_exports__["default"] = (ContactPage);
 
 /***/ }),
 

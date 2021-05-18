@@ -5,10 +5,10 @@ import Layout from '../components/Layout';
 const IndexPage = () => (
   <Layout fullMenu>
     <article id="main">
-      <header>
+      {/* <header>
         <h2>Generic Page</h2>
         <p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
-      </header>
+      </header> */}
       <section className="wrapper style5">
         <div className="inner">
           <h3>Lorem ipsum dolor</h3>

@@ -155,19 +155,17 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
       });
       namedChunkGroups[chunkKey].assets.forEach(asset => chunks.push({
         rel: `preload`,
-        name: asset.name
+        name: asset
       }));
       const childAssets = namedChunkGroups[chunkKey].childAssets;
 
       for (const rel in childAssets) {
-        if (childAssets.hasownProperty(rel)) {
-          chunks = (0, _lodash.concat)(chunks, childAssets[rel].map(chunk => {
-            return {
-              rel,
-              name: chunk
-            };
-          }));
-        }
+        chunks = (0, _lodash.concat)(chunks, childAssets[rel].map(chunk => {
+          return {
+            rel,
+            name: chunk
+          };
+        }));
       }
 
       return chunks;
@@ -194,7 +192,9 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
           ...pageData.result,
           params: { ...(0, _findPath.grabMatchParams)(this.props.location.pathname),
             ...(((_pageData$result = pageData.result) === null || _pageData$result === void 0 ? void 0 : (_pageData$result$page = _pageData$result.pageContext) === null || _pageData$result$page === void 0 ? void 0 : _pageData$result$page.__params) || {})
-          }
+          },
+          // pathContext was deprecated in v2. Renamed to pageContext
+          pathContext: pageData.result ? pageData.result.pageContext : undefined
         };
         let pageElement;
 
@@ -301,9 +301,6 @@ var _default = (pagePath, isClientOnlyPage, callback) => {
       key: `polyfill`,
       src: "/polyfill.js",
       noModule: true
-    }), /*#__PURE__*/_react.default.createElement("script", {
-      key: `framework`,
-      src: "/framework.js"
     }), /*#__PURE__*/_react.default.createElement("script", {
       key: `commons`,
       src: "/commons.js"

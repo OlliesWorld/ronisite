@@ -460,7 +460,7 @@ header {
 
   &.major {
     margin: 0 0 (_size(element-margin) * 1.75) 0;
-
+    padding: 2rem;
     h2,
     h3,
     h4,
@@ -496,9 +496,33 @@ header {
 }
 
 /* Form */
+.form_style {
+  margin: 5rem 0 10rem 0;
+}
+.form_style img {
+  display: none;
+}
 
+@include breakpoint('>=small') {
+  .form_style {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem 0 5rem;
+  }
+
+  .form_style img {
+    display: block;
+    width: 20.375rem;
+    height: 35.125rem;
+    object-fit: contain;
+  }
+}
 form {
-  margin: 0 0 _size(element-margin) 0;
+  width: 100%;
+  max-width: 360px;
+  height: 55vh;
+
+  margin: 0 5em _size(element-margin) 0;
 }
 
 label {
@@ -521,7 +545,8 @@ textarea {
   color: inherit;
   display: block;
   outline: 0;
-  padding: 0 1em;
+  margin-bottom: 1rem;
+  padding: 2em 1em;
   text-decoration: none;
   width: 100%;
 
@@ -1082,7 +1107,9 @@ button,
   );
   background-color: transparent;
   border-radius: 3px;
-  border: 0;
+  border: 1px solid _palette(fg-light);
+
+  // border: 0;
   box-shadow: inset 0 0 0 2px _palette(border);
   color: _palette(fg-bold);
   cursor: pointer;
@@ -1102,7 +1129,7 @@ button,
   text-overflow: ellipsis;
 
   &:hover {
-    background-color: #a78a00;
+    background-color: _palette(fg-light);
   }
 
   &:active {
@@ -2191,7 +2218,7 @@ body.is-mobile {
 }
 .Form {
   margin: 50px auto;
-  width: 100%;
+  width: 80%;
   max-width: 360px;
   height: 55vh;
 }

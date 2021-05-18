@@ -6,13 +6,15 @@ import Snow from '../assets/images/olliesnow.png'
 
 
 const ContactPage = () => (
-  <section id="one" className="wrapper style1 special">
+  <section id="one" className="wrapper style1 ">
 
     <SideBar />
-    <p><span className="form">
+    <div className="form_style">
+
       <img src={Snow} alt="Ollie and I in the snow" />
-    </span></p>
-    <Form />
+
+      <Form />
+    </div>
     <Footer />
   </section >
 

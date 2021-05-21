@@ -185,14 +185,14 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-input,
-select,
-textarea {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-}
+// input,
+// select,
+// textarea {
+//   -moz-appearance: none;
+//   -webkit-appearance: none;
+//   -ms-appearance: none;
+//   appearance: none;
+// }
 
 /* Basic */
 
@@ -496,6 +496,9 @@ header {
 }
 
 /* Form */
+.form-check {
+  display: flex;
+}
 .form_style {
   margin: 5rem 0 10rem 0;
 }
@@ -591,12 +594,12 @@ textarea {
 
 input[type='checkbox'],
 input[type='radio'] {
-  @include vendor('appearance', 'none');
-  display: block;
-  float: left;
-  margin-right: -2em;
-  opacity: 0;
-  width: 1em;
+  // @include vendor('appearance', 'none');
+  // display: block;
+  // float: left;
+  // margin-right: -2em;
+  // opacity: 0;
+  width: 3em;
   z-index: -1;
 
   & + label {
@@ -1097,7 +1100,7 @@ input[type='reset'],
 input[type='button'],
 button,
 .button {
-  @include vendor('appearance4', 'none');
+  // @include vendor('appearance4', 'none');
   @include vendor(
     'transition',
     (

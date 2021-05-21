@@ -10,6 +10,7 @@ exports.components = {
   "component---src-pages-generic-js": () => import("./../../../src/pages/Generic.js" /* webpackChunkName: "component---src-pages-generic-js" */),
   "component---src-pages-index-js": () => import("./../../../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
   "component---src-pages-projects-js": () => import("./../../../src/pages/Projects.js" /* webpackChunkName: "component---src-pages-projects-js" */),
+  "component---src-pages-team-js": () => import("./../../../src/pages/Team.js" /* webpackChunkName: "component---src-pages-team-js" */),
   "component---src-pages-thanks-js": () => import("./../../../src/pages/thanks.js" /* webpackChunkName: "component---src-pages-thanks-js" */)
 }
 

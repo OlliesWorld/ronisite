@@ -13,6 +13,7 @@ exports.components = {
   "component---src-pages-generic-js": hot(preferDefault(require("/Users/horse/Desktop/sites/new-folio/next-portfolio/src/pages/Generic.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/horse/Desktop/sites/new-folio/next-portfolio/src/pages/index.js"))),
   "component---src-pages-projects-js": hot(preferDefault(require("/Users/horse/Desktop/sites/new-folio/next-portfolio/src/pages/Projects.js"))),
+  "component---src-pages-team-js": hot(preferDefault(require("/Users/horse/Desktop/sites/new-folio/next-portfolio/src/pages/Team.js"))),
   "component---src-pages-thanks-js": hot(preferDefault(require("/Users/horse/Desktop/sites/new-folio/next-portfolio/src/pages/thanks.js")))
 }
 

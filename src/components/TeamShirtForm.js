@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import { navigate } from 'gatsby'
 import NetlifyForm from 'react-ssg-netlify-forms'
+import e from "express"
+
 
 
 const TeamShirtForm = () => {
@@ -14,11 +16,12 @@ const TeamShirtForm = () => {
     const handleChange = e => setFormValues({ ...formValues, [e.target.name]: e.target.value, [e.target.size]: e.target.value })
     const [formValues, setFormValues] = useState({
         name: '',
-        size: "",
+        size: e.target.size,
         message: ''
     })
 
     return (
+
         <NetlifyForm className="Form" formName="teamshirt" formValues={formValues} postSubmit={postSubmit} >
             <label htmlFor="nameInput" className="Form--Title">Please fill out form.</label>
             <div className='Form--Label'>
@@ -33,7 +36,6 @@ const TeamShirtForm = () => {
                         type="radio"
                         value={formValues.size}
                         onChange={handleChange}
-                        checked={false}
                         className="radio-checkmark"
                     />
                         Small
@@ -43,7 +45,6 @@ const TeamShirtForm = () => {
                         type="radio"
                         value={formValues.size}
                         onChange={handleChange}
-                        checked={false}
                         className="radio-checkmark"
                     />
                         Medium
@@ -53,7 +54,7 @@ const TeamShirtForm = () => {
                         type="radio"
                         value={formValues.size}
                         onChange={handleChange}
-                        checked={false}
+
                         className="radio-checkmark"
                     />
                         Large
@@ -63,7 +64,7 @@ const TeamShirtForm = () => {
                         type="radio"
                         value={formValues.size}
                         onChange={handleChange}
-                        checked={false}
+
                         className="radio-checkmark"
                     />
                         X-Large
@@ -81,6 +82,7 @@ const TeamShirtForm = () => {
                     value='Contact' >Send</button>
             </div>
         </NetlifyForm >
+
     )
 }
 export default TeamShirtForm

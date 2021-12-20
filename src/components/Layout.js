@@ -21,7 +21,7 @@ class Layout extends Component {
     }, 100);
   }
 
-  componentWillUnmount() {
+  componentDidUnmount() {
     if (this.timeoutId) {
       clearTimeout(this.timeoutId);
     }

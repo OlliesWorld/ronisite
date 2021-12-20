@@ -12,6 +12,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    `@raae/gatsby-plugin-let-it-snow`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
